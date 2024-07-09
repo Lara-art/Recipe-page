@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --color-Nutmeg: hsl(14, 45%, 36%);
+    --color-Dark-Raspberry: hsl(332, 51%, 32%);
+    --color-White: hsl(0, 0%, 100%);
+    --color-Rose-White: hsl(330, 100%, 98%);
+    --color-Eggshell: hsl(30, 54%, 90%);
+    --color-Light-Grey: hsl(30, 18%, 87%);
+    --color-Wenge-Brown: hsl(30, 10%, 34%);
+    --color-Dark-Charcoal: hsl(24, 5%, 18%);
+    --color-a: hsl(228, 45%, 44%);
+    --radius: 25px;
+}
+
+body {
+    font-family: "Outfit", "sans-serif";
+    font-size: 16px;
+    color: var(--color-Wenge-Brown);
+    background-color: var(--color-Light-Grey);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif", "sans-serif";
+    font-weight: 700;
+}
+
+h1 {
+    color: var(--color-Dark-Charcoal);
+}
+
+h2 {
+    color: var(--color-Nutmeg);
+}
+
+a {
+    color: var(--color-a);
+    font-size: 11px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+li {
+    padding-left: 20px;
+}
+
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-Eggshell);
+}
+
+.card {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: var(--radius);
+    background-color: var(--color-White);
+}
+
+.recipe {
+    border-radius: var(--radius);
+}
+
+.preparation {
+    background-color: var(--color-Rose-White);
+    padding: 20px;
+    border-radius: var(--radius);
+
+    & li {
+        list-style-type: inherit var(--color-Dark-Raspberry);
+    }
+
+    & ::marker {
+        color: var(--color-Dark-Raspberry);
+    }
+}
+
+.ingredients {
+    & li {
+        list-style-type: square;
+    }
+
+    & ::marker {
+        color: var(--color-Nutmeg);
+    }
+}
+
+.instructions {
+    & li::marker {
+        color: var(--color-Nutmeg);
+        font-weight: 600;
+    }
+}
+
+.brown {
+    color: var(--color-Wenge-Brown);
+    font-weight: 700;
+}
+
+.red {
+    color: var(--color-Dark-Raspberry);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.attribution {
+    margin-bottom: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 1440px){
+    .card {
+        padding: 20px;
+    }
+}
