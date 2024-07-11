@@ -13,6 +13,11 @@
     --radius: 25px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Outfit", "sans-serif";
     font-size: 16px;
@@ -49,13 +54,20 @@ img {
 
 li {
     padding-left: 20px;
+    margin-left: 15px;
 }
 
-
-hr {
+section {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+hr {
     border: 1px solid var(--color-Eggshell);
+}
+
+p{
+    margin-bottom: 20px;
 }
 
 .card {
@@ -109,7 +121,12 @@ hr {
 .red {
     color: var(--color-Dark-Raspberry);
     font-weight: 700;
-    font-size: 18px;
+}
+
+.grid {
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .attribution {
@@ -118,8 +135,29 @@ hr {
     text-align: center;
 }
 
-@media screen and (min-device-width: 375px) and (max-device-width: 1440px){
-    .card {
-        padding: 20px;
-    }
+.my20{
+    margin-bottom: 20px;
 }
+
+
+@media screen and (min-device-width: 325px) and (max-device-width: 1440px) {
+    
+        .card {
+            padding: 0px 22px 50px 22px;
+            border-radius: 0px;
+            margin: 0px auto;
+            & img{
+                padding: 0px;
+            }
+        }
+    }
+
+    body {
+        background-color: var(--color-White);
+    }
+
+    .recipe {
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
