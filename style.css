@@ -66,7 +66,7 @@ hr {
     border: 1px solid var(--color-Eggshell);
 }
 
-p{
+p {
     margin-bottom: 20px;
 }
 
@@ -135,29 +135,28 @@ p{
     text-align: center;
 }
 
-.my20{
+.my20 {
     margin-bottom: 20px;
 }
 
+@media screen and (min-device-width: 325px) and (max-device-width: 600px) {
 
-@media screen and (min-device-width: 325px) and (max-device-width: 1440px) {
-    
-        .card {
-            padding: 0px 22px 50px 22px;
-            border-radius: 0px;
-            margin: 0px auto;
-            & img{
-                padding: 0px;
-            }
+    .card {
+        border-radius: 0px;
+        margin: 150px auto 0px auto;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
         }
+    }
+
+    .recipe {
+        border-radius: 0px;
     }
 
     body {
         background-color: var(--color-White);
     }
-
-    .recipe {
-        border-radius: 0px;
-        padding: 0px;
-        margin: 0px;
-    }
+}
