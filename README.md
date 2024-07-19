@@ -9,8 +9,8 @@ This is my solution to the <a href="https://www.frontendmentor.io/challenges/rec
 
 <table>
   <tr>
-    <td style="width: 75%;"><img src="https://github.com/Lara-art/Social-links-profile/blob/main/screenshot/Desktop.PNG" alt="Vista de Escritorio" style="width: 100%;"/></td>
-    <td style="width: 25%;"><img src="https://github.com/Lara-art/Social-links-profile/blob/main/screenshot/Mobile.PNG"  alt="Vista Móvil" style="width: 100%;"/></td>
+    <td style="width: 75%;"><img src="https://github.com/Lara-art/Recipe-page/blob/main/screenshots/Desktop.PNG" alt="Vista de Escritorio" style="width: 100%;"/></td>
+    <td style="width: 25%;"><img src="https://github.com/Lara-art/Recipe-page/blob/main/screenshots/mobile.PNG"  alt="Vista Móvil" style="width: 100%;"/></td>
   </tr>
 </table>
 
@@ -34,30 +34,36 @@ This is my solution to the <a href="https://www.frontendmentor.io/challenges/rec
 
 ### 📚 What I learned
 
-I’m really proud of this CSS code because I made it mobile responsive without using any @media queries.
+With this exercise, I learned something I had never done before: changing the color of the list item markers.
 
 
 ```css
-.card {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    margin: auto;
-    padding: 40px;
+li {
+        list-style-type: inherit var(--color-Dark-Raspberry);
+    }
+
+    & ::marker {
+        color: var(--color-Dark-Raspberry);
+    }
 }
 
 
 ```
-Using place-content: center, I was able to align and justify it both vertically and horizontally.
+I also had to set the image to position: absolute in media, so that it wouldn't be affected by the div it was placed in.
 
 ```css
-body {
-    height: 100vh;
-    place-content: center;
-    max-width: 1440px;
-    margin: auto;
-    padding: 2rem;
-}
+@media screen and (min-device-width: 325px) and (max-device-width: 600px) {
+
+    .card {
+        border-radius: 0px;
+        margin: 150px auto 0px auto;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
 ```
 
 
